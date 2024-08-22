@@ -12,3 +12,13 @@ vim.keymap.set('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
 
 -- Open cheatsheet file for neovim
 vim.keymap.set('n', '<leader>ch', ':e ~/Documents/nvim_cheatsheet.txt<CR>')
+
+-- Opslaan en exiten van bestanden
+vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-x>', ':q<CR>', { noremap = true, silent = true })
+
+-- DBEE shortcut
+vim.keymap.set('n', '<leader>db', ':DBUI<CR>', { noremap = true, silent = true })
+
+-- Run go code
+vim.keymap.set('n', '<F5>', ':w<CR>:!go run %<CR>', { noremap = true, silent = true })
